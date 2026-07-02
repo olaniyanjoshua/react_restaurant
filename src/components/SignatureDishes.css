@@ -1,0 +1,71 @@
+.dishes {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
+}
+
+.dishes__heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.dishes__title {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .dishes__title {
+    font-size: 3rem;
+  }
+}
+
+.dishes__divider {
+  width: 6rem;
+  height: 4px;
+  background: #f59e0b;
+  margin: 0 auto;
+}
+
+.dishes__grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .dishes__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.dish-card {
+  cursor: pointer;
+}
+
+.dish-card__image-wrap {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dish-card__image {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.dish-card:hover .dish-card__image {
+  transform: scale(1.05);
+}
+
+.dish-card__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.dish-card__description {
+  color: #57534e;
+  margin-top: 0.5rem;
+}
