@@ -7,6 +7,7 @@ async function request(path, options = {}) {
   try {
     res = await fetch(`${API_BASE_URL}${path}`, {
       ...options,
+      credentials: 'include',
       headers: {
         Accept: 'application/json',
         ...(isFormData ? {} : { 'Content-Type': 'application/json' }),
