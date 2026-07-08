@@ -16,6 +16,9 @@ function Footer() {
       <p>123 Dining Street, Flavor City</p>
       <p className="footer__phone">+1 (555) 012-3456</p>
       <p className="footer__copyright">© 2026 Gourmet Haven. All Rights Reserved.</p>
+      <Link to="/admin/login" className="footer__staff-link">
+        Staff Login
+      </Link>
     </footer>
   );
 }

@@ -41,3 +41,15 @@
   font-size: 0.875rem;
   font-style: italic;
 }
+
+.footer__staff-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #78716c;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.footer__staff-link:hover {
+  color: #d6d3d1;
+}
